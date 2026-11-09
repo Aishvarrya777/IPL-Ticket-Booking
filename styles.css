@@ -350,3 +350,141 @@ footer {
         overflow-x: auto;
     }
 }
+
+/* =================================
+   ACTIVITY 3 - BOOKING FORM PAGE
+================================= */
+
+.booking-main {
+    max-width: 900px;
+    margin: 100px auto 30px;
+    padding: 20px;
+}
+
+.booking-heading {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #071a3d, #14549a);
+    color: white;
+    border-radius: 12px;
+}
+
+.booking-heading h1 {
+    color: #f5b82e;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.booking-form-section {
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form-section h2 {
+    color: #071a3d;
+    margin-bottom: 20px;
+}
+
+.booking-form-section fieldset {
+    border: 1px solid #ccd3df;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+.booking-form-section legend {
+    color: #123b70;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.booking-form-section label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+.booking-form-section input:not([type="radio"]),
+.booking-form-section select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd3df;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.booking-form-section input:focus,
+.booking-form-section select:focus {
+    outline: 2px solid #f5b82e;
+    border-color: #f5b82e;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.booking-form-section .radio-option label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.radio-option input {
+    accent-color: #123b70;
+}
+
+.booking-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.booking-buttons button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #071a3d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-buttons button:hover {
+    background-color: #123b70;
+}
+
+.booking-buttons button[type="reset"] {
+    background-color: #f5b82e;
+    color: #071a3d;
+}
+
+.back-link {
+    text-align: center;
+    margin: 25px;
+}
+
+.back-link a {
+    color: #123b70;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .booking-main {
+        padding: 12px;
+    }
+
+    .booking-form-section {
+        padding: 18px;
+    }
+
+    .booking-buttons {
+        flex-direction: column;
+    }
+}
