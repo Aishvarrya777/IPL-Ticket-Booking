@@ -51,6 +51,26 @@ IPL-Ticket-Booking/
 └── README.md
 ```
 
+
+### Activity 7: Selector Forms and Live Interaction Using JavaScript
+
+- Used DOM selectors to access booking form elements.
+- Added change event listeners for Match, Stand Category and Ticket Quantity.
+- Implemented live Booking Summary updates.
+- Calculated total ticket price dynamically based on user selections.
+- Integrated toast notifications using showToast().
+- Updated the Booking Summary Card without reloading the page.
+
+**Files Updated:**
+- index.html
+- app.js
+
+**Features Implemented:**
+- Dynamic booking summary
+- Live ticket price calculation
+- Toast notifications
+
+
 ## Author
 
 Aishvarrya
