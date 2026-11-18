@@ -140,3 +140,89 @@ standSelect.addEventListener("change", updateBookingSummary);
 
 quantityInput.addEventListener("change", updateBookingSummary);
 
+
+// =====================================
+// ACTIVITY 8 - RESPONSIVE INTERACTIVITY
+// =====================================
+
+
+// 1. Team Filter
+
+const teamFilter = document.getElementById("teamFilter");
+const matchCards = document.querySelectorAll(".match-card");
+
+teamFilter.addEventListener("change", function () {
+
+    const selectedTeam = teamFilter.value;
+
+    matchCards.forEach(function (card) {
+
+        const teams = card.dataset.teams.split(" ");
+
+        if (selectedTeam === "all" || teams.includes(selectedTeam)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+
+// 2. Grid and List View Toggle
+
+const matchContainer = document.getElementById("matchContainer");
+const gridButton = document.getElementById("gridView");
+const listButton = document.getElementById("listView");
+
+gridButton.addEventListener("click", function () {
+
+    matchContainer.classList.remove("match-list");
+    matchContainer.classList.add("match-grid");
+
+    gridButton.classList.add("active-view");
+    listButton.classList.remove("active-view");
+
+});
+
+listButton.addEventListener("click", function () {
+
+    matchContainer.classList.remove("match-grid");
+    matchContainer.classList.add("match-list");
+
+    listButton.classList.add("active-view");
+    gridButton.classList.remove("active-view");
+
+});
+
+
+// 3. Mobile Hamburger Menu
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+
+    navLinks.classList.toggle("show-menu");
+
+    const isExpanded = navLinks.classList.contains("show-menu");
+
+    menuToggle.setAttribute("aria-expanded", isExpanded);
+
+});
+
+// Close mobile menu after clicking a navigation link
+
+navLinks.querySelectorAll("a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        navLinks.classList.remove("show-menu");
+        menuToggle.setAttribute("aria-expanded", "false");
+
+    });
+
+});
+
+console.log("Activity 8 JavaScript loaded successfully!");
