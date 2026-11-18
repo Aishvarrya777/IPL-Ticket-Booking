@@ -70,6 +70,17 @@ IPL-Ticket-Booking/
 - Live ticket price calculation
 - Toast notifications
 
+## Activity 8 – Responsive Design
+
+- Implemented responsive layouts for desktop and mobile screens.
+- Added a responsive navigation menu with a hamburger toggle.
+- Implemented Grid View and List View for match cards.
+- Added team-based filtering for matches.
+- Used CSS media queries to adapt the layout to different screen sizes.
+
+### Screenshots
+- Desktop View
+- Mobile View
 
 ## Author
 
